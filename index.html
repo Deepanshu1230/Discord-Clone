@@ -18,7 +18,7 @@
 </style>
    
 </head>
-<body class="w-full max-w-full">
+<body class="w-full max-w-full overflow-x-hidden md:overflow-auto">
     <!--Nav bar-->
     <div class="bg-[#404EED] font-ggsans">
             <!--top nav bar section-->
@@ -37,7 +37,7 @@
             </ul>
             <!--button-->
             <div class="flex">
-                <a href="#" class="bg-[#fff] px-4 self-center p-2 text-[#2c2f33] rounded-full font-[500] text-[14px]">Open Discord</a>
+                <a href="#" class="bg-[#fff] px-4 self-center hidden md:block p-2 text-[#2c2f33] rounded-full font-[500] text-[14px]">Open Discord</a>
             </div>
 
             <!--Hamburget button-->
@@ -56,7 +56,7 @@
         <!--clouds images-->
         <img src="./images/Image0.svg" class="absolute z-10 bottom-1 top-auto scale-x-125" alt="" />
         <!--Cartoon Images-->
-        <img src="./images/Image1.svg" class="absolute z-10 bottom-0 right-[2%] " alt="" />
+        <img src="./images/Image1.svg" class="absolute z-10 bottom-0 right-[2%]  hidden md:block md:items-center" alt="" />
         <img src="./images/Image2.svg" class="absolute z-10 bottom-0 -left-[3%] " alt="" />
     
 
@@ -70,7 +70,7 @@
                 to talk every day and hang out more often.
             </p>
             <!--buttons-->
-            <div class="flex flex-row items-center justify-center gap-10 font-[500] z-20">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10 font-[500] z-20">
                 <a href="#">
                     <button  class="bg-[#fff] text-black rounded-full  z-20 p-3 px-7  hover:text-[#404EED]
                     transition-all duration-200"> <i class="fa-solid fa-download text-[20px] mr-2"></i> Download For Windows</button>
@@ -85,7 +85,7 @@
     <!--Sectioin=1-->
     <section class="bg-[#fff] w-full relative">
         <!--all content box-->
-        <div class=" flex  flex-row items-center max-w-[1200px] mx-auto mt-16  space-x-16 pb-16">
+        <div class=" flex  flex-col md:flex-row items-center max-w-[1200px] mx-auto mt-16  space-x-16 pb-16">
             <!--image left part-->
             <div class="">
                 <img src="./images/section1Image.svg" alt="">
@@ -110,7 +110,7 @@
     <!--Section-2-->
     <section class="bg-[#f6f6f6] relative w-full">
         <!--main content part-->
-        <div class="flex flex-row items-center mx-auto pt-16 max-w-[1200px] space-x-16 pb-16">
+        <div class="flex flex-col md:flex-row items-center mx-auto pt-16 max-w-[1200px] space-x-16 pb-16">
             <!--left part-->
             <div class="flex flex-col mb-20 gap-y-5 pl-28">
                 <h1 class="text-black font-[700] text-[40px]">Where hanging <br>out
@@ -132,7 +132,7 @@
     <!--Section-3-->
     <section class="bg-[#fff] w-full relative">
         <!--all content box-->
-        <div class=" flex  flex-row items-center max-w-[1200px] mx-auto mt-28  space-x-16 pb-16">
+        <div class=" flex  flex-col md:flex-row items-center max-w-[1200px] mx-auto mt-28  space-x-16 pb-16">
             <!--image left part-->
             <div class="">
                 <img src="./images/section3Image.svg" alt="">
@@ -156,7 +156,7 @@
         <!--Main content-->
         <div class="flex flex-col items-center pt-24 max-w-[1200px] mx-auto mb-24">
             <!--heading-->
-            <h1 class="text-black font-[800] text-[60px]">REALIABLE TECH FOR STAYING CLOSE</h1>
+            <h1 class="text-black font-[800] text-[60px] text-center">REALIABLE TECH FOR STAYING CLOSE</h1>
             <p class="text-black text-center text-[22px] leading-[35px] mt-[24px]">Low-latency voice and video feels like you're in the same room.Wave hello over 
                 videos,watch friends stream<br>
                 Thier games,or gather up and have a drawing session with screen share.
@@ -187,8 +187,8 @@
         <!--Uper wala part-->
         <div class="flex flex-row justify-between w-[1200px]">
             <!--left wala image wala part-->
-            <div class="flex flex-col space-y-5">
-                <h1 class="text-[#404EED] font-[1000] text-[35px] text-left scale-x-110 w-[200px] gap-y-1">IMAGINE A PLACE</h1>
+            <div class="flex gap-x-48 mx-auto md:flex-col space-y-5">
+                <h1 class="text-[#404EED] font-[1000] text-[35px]  scale-x-110 w-[200px] gap-y-1">IMAGINE A PLACE</h1>
                 <!--Icon div-->
                 <div class="flex flex-row gap-x-7">
                     <a href="#"><i class="fa-brands fa-twitter text-2xl" style="color: #ffffff; "></i></a>
@@ -199,7 +199,7 @@
 
             </div>
             <!--right wala part-->
-            <div class=" grid grid-cols-4 gap-x-14 text-[20px]">
+            <div class=" hidden md:grid grid-cols-4 gap-x-14 text-[20px] ">
 
                 <!--col 1-->
                 <ul class="flex flex-col gap-y-3">
@@ -247,12 +247,12 @@
         </div>
 
         <!--Horizontal line div-->
-        <div class="bg-[#404EED] w-[1200px] h-1 mt-14"></div>
+        <div class="bg-[#404EED] w-full h-1 mt-14"></div>
 
         <!--image and  button-->
-        <div class="flex flex-row justify-between w-[1200px] mt-9">
-            <img src="./images/logo.svg" alt="">
-            <button class="bg-[#404EED] text-[#fff] rounded-full py-2 px-[25px]  font-[500] text-[20px]">Sign up</button>
+        <div class="flex flex-row justify-between w-full mt-9 p-4">
+            <img src="./images/logo.svg" alt="" >
+            <button class="bg-[#404EED] text-[#fff] rounded-full py-2 px-[25px] font-[500] text-[20px]">Sign up</button>
         </div>
        </div>
     </section>
